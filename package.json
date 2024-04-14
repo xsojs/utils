@@ -1,0 +1,43 @@
+{
+    "name": "@xso/utils",
+    "version": "0.1.0",
+    "description": "Utilitarian functions to Remarkable Structures Outflows.",
+    "main": "./dist/xso-utils.umd.js",
+    "module": "./dist/xso-utils.es.js",
+    "exports": {
+        ".": {
+            "import": "./src/main.js",
+            "require": "./dist/xso-utils.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Eduardo Velasques",
+    "license": "MIT",
+    "repository": "xsojs/utils",
+    "keywords": [
+        "react",
+        "vue",
+        "jquery",
+        "css",
+        "less",
+        "sass",
+        "scss",
+        "style",
+        "stylex",
+        "simple",
+        "util",
+        "utility"
+    ],
+    "devDependencies": {
+        "vite": "^4.3.9"
+    },
+    "files": [
+        "dist",
+        "src"
+    ]
+}
