@@ -1,6 +1,11 @@
+import ensureError from "./ensureError";
+
 function ensureFunction(info, def) {
-    if (typeof def !== 'function' || def == null) {
-        throw new Error(`${info} is ${typeof def} and not a valid function.`);
+    if (def == null) {
+        ensureError(ensureError.function, ensureError.null, info, def);
+    }
+    if (typeof def !== 'function') {
+        ensureError(ensureError.function, ensureError.invalid, info, def);
     }
 }
 

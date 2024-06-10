@@ -1,6 +1,11 @@
+import ensureError from "./ensureError";
+
 function ensureString(info, def) {
-    if ((typeof def !== 'string' && !(def instanceof String)) || def == null) {
-        throw new Error(`${info} is ${typeof def} and not a valid string.`);
+    if (def == null) {
+        ensureError(ensureError.string, ensureError.null, info, def);
+    }
+    if ((typeof def !== 'string' && !(def instanceof String))) {
+        ensureError(ensureError.string, ensureError.invalid, info, def);
     }
 }
 
