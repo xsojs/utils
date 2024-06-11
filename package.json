@@ -1,7 +1,7 @@
 {
     "name": "@xso/utils",
     "version": "0.1.0",
-    "description": "Utilitarian functions to Remarkable Structures Outflows.",
+    "description": "Utilitarian functions to XSO framework.",
     "main": "./dist/xso-utils.umd.js",
     "module": "./dist/xso-utils.es.js",
     "exports": {
@@ -20,18 +20,8 @@
     "license": "MIT",
     "repository": "xsojs/utils",
     "keywords": [
-        "react",
-        "vue",
-        "jquery",
-        "css",
-        "less",
-        "sass",
-        "scss",
-        "style",
-        "stylex",
-        "simple",
-        "util",
-        "utility"
+        "xso",
+        "xsojs"
     ],
     "devDependencies": {
         "vite": "^4.3.9"
