@@ -23,6 +23,9 @@
         "xso",
         "xsojs"
     ],
+    "dependencies": {
+        "@xso/utils": "file:"
+    },
     "devDependencies": {
         "vite": "^4.3.9"
     },
